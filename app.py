@@ -172,11 +172,12 @@ ACHIEVEMENTS = [
 ]
 
 GALLERY = [
-    {"file": "annualday.svg", "caption": "Annual Day assembly in front of the school building"},
-    {"file": "culturalday.svg", "caption": "Bihu performance at the cultural evening"},
-    {"file": "sportsday.svg", "caption": "Track events on Sports Day"},
-    {"file": "classroom.svg", "caption": "A regular classroom session"},
-    {"file": "sciencelab.svg", "caption": "Students at work in the science lab"},
+    GALLERY = [
+    {"file": "annualday.jpg", "caption": "Annual Day assembly in front of the school building"},
+    {"file": "culturalday.jpg", "caption": "Bihu performance at the cultural evening"},
+    {"file": "sportsday.jpg", "caption": "Track events on Sports Day"},
+    {"file": "classroom.jpg", "caption": "A regular classroom session"},
+    {"file": "sciencelab.jpg", "caption": "Students at work in the science lab"},
 ]
 
 DEPARTMENTS = [
