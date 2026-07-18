@@ -1,0 +1,40 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#F5F0E1"/>
+  <rect x="0" y="0" width="800" height="220" fill="#DCEFF7"/>
+  <!-- shelves -->
+  <rect x="40" y="60" width="220" height="140" fill="#8B5A2B"/>
+  <rect x="40" y="120" width="220" height="8" fill="#5C3A1E"/>
+  <circle cx="80" cy="100" r="18" fill="#2F6F4E"/>
+  <circle cx="130" cy="95" r="14" fill="#7A2632"/>
+  <rect x="170" y="80" width="24" height="34" fill="#E8A33D"/>
+  <circle cx="90" cy="160" r="16" fill="#7EC8E3"/>
+  <rect x="140" y="150" width="20" height="30" fill="#C1573A"/>
+  <!-- lab bench -->
+  <rect x="0" y="330" width="800" height="20" fill="#14213D"/>
+  <rect x="0" y="350" width="800" height="150" fill="#2E4057"/>
+  <!-- beakers and flasks -->
+  <g>
+    <path d="M330 250 L330 300 L300 350 L390 350 L360 300 L360 250 Z" fill="none" stroke="#14213D" stroke-width="6"/>
+    <path d="M310 320 L380 320 L390 350 L300 350 Z" fill="#7EC8E3"/>
+  </g>
+  <g>
+    <rect x="420" y="270" width="50" height="80" fill="none" stroke="#14213D" stroke-width="6"/>
+    <rect x="420" y="310" width="50" height="40" fill="#E8A33D"/>
+  </g>
+  <g>
+    <path d="M520 260 L540 260 L540 290 L560 350 L500 350 L520 290 Z" fill="none" stroke="#14213D" stroke-width="6"/>
+    <path d="M505 320 L555 320 L560 350 L500 350 Z" fill="#7A2632"/>
+  </g>
+  <!-- student -->
+  <g>
+    <circle cx="640" cy="240" r="28" fill="#C88B5E"/>
+    <rect x="614" y="266" width="56" height="70" fill="#F5F0E1"/>
+    <rect x="614" y="266" width="56" height="70" fill="none" stroke="#2F6F4E" stroke-width="4"/>
+  </g>
+  <!-- microscope -->
+  <g>
+    <rect x="150" y="300" width="14" height="50" fill="#14213D"/>
+    <rect x="130" y="345" width="54" height="10" fill="#14213D"/>
+    <rect x="152" y="270" width="30" height="14" fill="#E8A33D"/>
+  </g>
+</svg>

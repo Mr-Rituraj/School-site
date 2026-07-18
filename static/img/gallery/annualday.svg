@@ -1,0 +1,43 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#DCEFF7"/>
+  <rect x="0" y="360" width="800" height="140" fill="#8FBF6B"/>
+  <!-- school building -->
+  <rect x="150" y="140" width="500" height="220" fill="#F5F0E1" stroke="#14213D" stroke-width="6"/>
+  <polygon points="150,140 400,60 650,140" fill="#7A2632" stroke="#14213D" stroke-width="6"/>
+  <rect x="370" y="90" width="60" height="50" fill="#E8A33D" stroke="#14213D" stroke-width="4"/>
+  <!-- flagpole -->
+  <rect x="396" y="30" width="6" height="60" fill="#8B5A2B"/>
+  <polygon points="402,32 440,42 402,52" fill="#E8A33D"/>
+  <!-- windows -->
+  <rect x="190" y="190" width="50" height="60" fill="#7EC8E3" stroke="#14213D" stroke-width="4"/>
+  <rect x="270" y="190" width="50" height="60" fill="#7EC8E3" stroke="#14213D" stroke-width="4"/>
+  <rect x="480" y="190" width="50" height="60" fill="#7EC8E3" stroke="#14213D" stroke-width="4"/>
+  <rect x="560" y="190" width="50" height="60" fill="#7EC8E3" stroke="#14213D" stroke-width="4"/>
+  <!-- door -->
+  <rect x="370" y="270" width="60" height="90" fill="#2F6F4E" stroke="#14213D" stroke-width="4"/>
+  <!-- assembled students in front -->
+  <g>
+    <circle cx="250" cy="400" r="18" fill="#E8B27A"/>
+    <rect x="234" y="416" width="32" height="40" fill="#E8A33D"/>
+  </g>
+  <g>
+    <circle cx="300" cy="405" r="18" fill="#C88B5E"/>
+    <rect x="284" y="421" width="32" height="40" fill="#7A2632"/>
+  </g>
+  <g>
+    <circle cx="350" cy="400" r="18" fill="#E8B27A"/>
+    <rect x="334" y="416" width="32" height="40" fill="#2F6F4E"/>
+  </g>
+  <g>
+    <circle cx="450" cy="402" r="18" fill="#C88B5E"/>
+    <rect x="434" y="418" width="32" height="40" fill="#F5C518"/>
+  </g>
+  <g>
+    <circle cx="500" cy="398" r="18" fill="#E8B27A"/>
+    <rect x="484" y="414" width="32" height="40" fill="#7A2632"/>
+  </g>
+  <g>
+    <circle cx="550" cy="404" r="18" fill="#C88B5E"/>
+    <rect x="534" y="420" width="32" height="40" fill="#2F6F4E"/>
+  </g>
+</svg>

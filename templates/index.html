@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block title %}{{ school_name }} — Home{% endblock %}
+{% block content %}
+
+<section class="hero" id="hero-carousel">
+  <div class="hero-bg-layer is-active" style="background-image: url('{{ url_for('static', filename='img/gallery/annualday.svg') }}')"></div>
+  <div class="hero-bg-layer" style="background-image: url('{{ url_for('static', filename='img/gallery/culturalday.svg') }}')"></div>
+  <div class="hero-bg-layer" style="background-image: url('{{ url_for('static', filename='img/gallery/sciencelab.svg') }}')"></div>
+  <div class="hero-bg-layer" style="background-image: url('{{ url_for('static', filename='img/gallery/sportsday.svg') }}')"></div>
+
+  <div class="hero-watermark" aria-hidden="true">
+    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+  </div>
+  <div class="hero-inner reveal">
+    <p class="eyebrow">Grades 1 – 10 · Tetelisara, Umrongso, Dima Hasao</p>
+    <h1 class="hero-title">Shaping character,<br>the <em>Sishu Niketan</em> way.</h1>
+    <p class="hero-sub">Sankardev Sishu Niketan, Tetelisara blends strong academics with Assamese
+      culture and values — so every student leaves grounded, capable, and proud of where they come from.</p>
+    <div class="hero-actions">
+      <a href="{{ url_for('admissions') }}" class="btn btn-primary">Start an application</a>
+      <a href="{{ url_for('academics') }}" class="btn btn-ghost">See what we teach</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats-wrap">
+  <div class="stats-strip reveal">
+    <div class="stat-item">
+      <div class="stat-number" data-count="30">0<span class="suffix">+</span></div>
+      <div class="stat-label">Years of legacy</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-count="600">0<span class="suffix">+</span></div>
+      <div class="stat-label">Students</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-count="8">0</div>
+      <div class="stat-label">Faculty & staff</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-count="6">0</div>
+      <div class="stat-label">Departments</div>
+    </div>
+  </div>
+</div>
+
+<section class="quick-links reveal">
+  <a href="{{ url_for('academics') }}" class="quick-card">
+    <span class="quick-tag">Academics</span>
+    <h3>Six departments, one timetable</h3>
+    <p>From lab sciences to studio art — see how each grade's week is structured.</p>
+  </a>
+  <a href="{{ url_for('admissions') }}" class="quick-card">
+    <span class="quick-tag">Admissions</span>
+    <h3>Four steps to enrollment</h3>
+    <p>Enquiry, tour, interview, offer — most families are through in under three weeks.</p>
+  </a>
+  <a href="{{ url_for('faculty') }}" class="quick-card">
+    <span class="quick-tag">Faculty</span>
+    <h3>Meet who's teaching</h3>
+    <p>Homeroom teachers and department heads, with the subjects they lead.</p>
+  </a>
+</section>
+
+<section class="notices-preview reveal">
+  <div class="section-head">
+    <h2>Pinned to the noticeboard</h2>
+    <a href="{{ url_for('notices_page') }}" class="see-all">See all notices →</a>
+  </div>
+  <div class="notice-grid">
+    {% for n in notices %}
+    <article class="notice-card">
+      <span class="pin"></span>
+      <time class="notice-date">{{ n['posted_on'] }}</time>
+      <h4>{{ n['title'] }}</h4>
+      <p>{{ n['body'] }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="achievements reveal">
+  <div class="section-head">
+    <h2>Recent achievements</h2>
+    <span class="see-all">{{ achievements|length }} highlights</span>
+  </div>
+
+  <div class="carousel" data-autoplay="5500" id="achievements-carousel">
+    <div class="carousel-track">
+      {% for a in achievements %}
+      <div class="carousel-slide achievement-slide">
+        <span class="achievement-year">{{ a.year }}</span>
+        <h3>{{ a.title }}</h3>
+        <p>{{ a.detail }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <button class="carousel-arrow prev" aria-label="Previous achievement">‹</button>
+    <button class="carousel-arrow next" aria-label="Next achievement">›</button>
+    <div class="carousel-dots"></div>
+  </div>
+</section>
+
+<section class="gallery reveal">
+  <div class="section-head">
+    <h2>Life at school</h2>
+    <span class="see-all">{{ gallery|length }} moments</span>
+  </div>
+
+  <div class="carousel carousel-photo" data-autoplay="4500" id="gallery-carousel">
+    <div class="carousel-track">
+      {% for g in gallery %}
+      <div class="carousel-slide photo-slide">
+        <img src="{{ url_for('static', filename='img/gallery/' + g.file) }}" alt="{{ g.caption }}">
+        <span class="photo-caption">{{ g.caption }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    <button class="carousel-arrow prev" aria-label="Previous photo">‹</button>
+    <button class="carousel-arrow next" aria-label="Next photo">›</button>
+    <div class="carousel-dots"></div>
+  </div>
+</section>
+
+{% endblock %}

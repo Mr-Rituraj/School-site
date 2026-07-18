@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Academics — {{ school_name }}{% endblock %}
+{% block content %}
+
+<section class="page-header reveal">
+  <p class="eyebrow">Academics</p>
+  <h1>Six departments, every grade.</h1>
+  <p class="page-sub">Every student takes a core spread across these departments, then adds
+    electives from Grade 9 onward. Class sizes are capped at 22.</p>
+</section>
+
+<section class="dept-grid reveal">
+  {% for d in departments %}
+  <article class="dept-card" style="--dept-color: {{ d.color }}">
+    <h3>{{ d.name }}</h3>
+    <ul class="subject-list">
+      {% for s in d.subjects %}
+      <li>{{ s }}</li>
+      {% endfor %}
+    </ul>
+  </article>
+  {% endfor %}
+</section>
+
+{% endblock %}

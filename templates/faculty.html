@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Faculty — {{ school_name }}{% endblock %}
+{% block content %}
+
+<section class="page-header reveal">
+  <p class="eyebrow">Faculty</p>
+  <h1>The people teaching the timetable.</h1>
+  <p class="page-sub">Department heads and homeroom teachers you'll meet from day one.</p>
+</section>
+
+<section class="faculty-grid reveal">
+  {% for f in faculty %}
+  <article class="faculty-card">
+    <div class="avatar">{{ f.initials }}</div>
+    <h3>{{ f.name }}</h3>
+    <p class="faculty-role">{{ f.role }}</p>
+    <span class="faculty-dept">{{ f.dept }}</span>
+  </article>
+  {% endfor %}
+</section>
+
+{% endblock %}

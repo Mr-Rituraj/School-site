@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Messages — {{ school_name }}{% endblock %}
+{% block content %}
+
+<section class="page-header reveal">
+  <p class="eyebrow">Front office</p>
+  <h1>Contact form submissions</h1>
+  <p class="page-sub">{{ messages|length }} message{{ 's' if messages|length != 1 else '' }} received.
+    <a href="{{ url_for('admin_logout') }}" style="color: var(--green); font-weight: 600;">Log out</a>
+  </p>
+</section>
+
+<section class="admin-messages reveal">
+  {% if messages %}
+  <table class="messages-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Reason</th>
+        <th>Message</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for m in messages %}
+      <tr>
+        <td class="mono">{{ m['submitted_on'] }}</td>
+        <td>{{ m['name'] }}</td>
+        <td><a href="mailto:{{ m['email'] }}">{{ m['email'] }}</a></td>
+        <td>{{ m['reason'] }}</td>
+        <td>{{ m['message'] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p>No messages yet.</p>
+  {% endif %}
+</section>
+
+{% endblock %}

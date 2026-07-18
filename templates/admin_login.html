@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Admin Login — {{ school_name }}{% endblock %}
+{% block content %}
+
+<section class="page-header reveal">
+  <p class="eyebrow">Front office</p>
+  <h1>Admin login</h1>
+  <p class="page-sub">Enter the admin password to view messages submitted through the contact form.</p>
+</section>
+
+<section class="contact-layout reveal" style="grid-template-columns: 1fr; max-width: 420px;">
+  <form class="contact-form" method="POST" action="{{ url_for('admin_login') }}">
+    <label>
+      Password
+      <input type="password" name="password" required autofocus>
+    </label>
+    <button type="submit" class="btn btn-primary">Log in</button>
+  </form>
+</section>
+
+{% endblock %}
