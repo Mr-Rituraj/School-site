@@ -172,7 +172,6 @@ ACHIEVEMENTS = [
 ]
 
 GALLERY = [
-    GALLERY = [
     {"file": "annualday.jpg", "caption": "Annual Day assembly in front of the school building"},
     {"file": "culturalday.jpg", "caption": "Bihu performance at the cultural evening"},
     {"file": "sportsday.jpg", "caption": "Track events on Sports Day"},
