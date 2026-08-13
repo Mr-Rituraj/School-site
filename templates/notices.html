@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Notices — {{ school_name }}{% endblock %}
+{% block content %}
+
+<section class="page-header reveal">
+  <p class="eyebrow">Noticeboard</p>
+  <h1>Everything currently pinned up.</h1>
+  <p class="page-sub">Announcements from the front office, newest first.</p>
+</section>
+
+<section class="notice-grid full reveal">
+  {% for n in notices %}
+  <article class="notice-card">
+    <span class="pin"></span>
+    <time class="notice-date">{{ n['posted_on'] }}</time>
+    <h4>{{ n['title'] }}</h4>
+    <p>{{ n['body'] }}</p>
+  </article>
+  {% endfor %}
+</section>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#DCEFF7"/>
+  <rect x="0" y="300" width="800" height="200" fill="#8FBF6B"/>
+  <!-- running track -->
+  <rect x="0" y="380" width="800" height="90" fill="#C1573A"/>
+  <rect x="0" y="410" width="800" height="8" fill="#F5F0E1"/>
+  <rect x="0" y="440" width="800" height="8" fill="#F5F0E1"/>
+  <!-- flags bunting -->
+  <path d="M0 40 L60 70 L120 40 L180 70 L240 40 L300 70 L360 40 L420 70 L480 40 L540 70 L600 40 L660 70 L720 40 L780 70" fill="none" stroke="#14213D" stroke-width="4"/>
+  <polygon points="30,40 60,70 90,40" fill="#E8A33D"/>
+  <polygon points="150,40 180,70 210,40" fill="#7A2632"/>
+  <polygon points="270,40 300,70 330,40" fill="#2F6F4E"/>
+  <polygon points="390,40 420,70 450,40" fill="#E8A33D"/>
+  <polygon points="510,40 540,70 570,40" fill="#7A2632"/>
+  <polygon points="630,40 660,70 690,40" fill="#2F6F4E"/>
+  <!-- runners -->
+  <g>
+    <circle cx="220" cy="360" r="22" fill="#E8B27A"/>
+    <rect x="205" y="380" width="30" height="40" fill="#14213D"/>
+    <rect x="195" y="418" width="16" height="35" fill="#C88B5E"/>
+    <rect x="230" y="418" width="16" height="35" fill="#C88B5E"/>
+  </g>
+  <g>
+    <circle cx="360" cy="350" r="22" fill="#C88B5E"/>
+    <rect x="345" y="370" width="30" height="40" fill="#E8A33D"/>
+    <rect x="332" y="408" width="16" height="38" fill="#8B5A2B"/>
+    <rect x="372" y="408" width="16" height="38" fill="#8B5A2B"/>
+  </g>
+  <g>
+    <circle cx="500" cy="365" r="22" fill="#E8B27A"/>
+    <rect x="485" y="385" width="30" height="40" fill="#7A2632"/>
+    <rect x="472" y="423" width="16" height="35" fill="#C88B5E"/>
+    <rect x="512" y="423" width="16" height="35" fill="#C88B5E"/>
+  </g>
+  <!-- winner's podium -->
+  <g>
+    <rect x="620" y="380" width="60" height="60" fill="#E8A33D" stroke="#14213D" stroke-width="4"/>
+    <rect x="560" y="410" width="60" height="30" fill="#C1573A" stroke="#14213D" stroke-width="4"/>
+    <rect x="680" y="410" width="60" height="30" fill="#C1573A" stroke="#14213D" stroke-width="4"/>
+    <text x="645" y="405" font-family="Arial" font-size="20" fill="#14213D" text-anchor="middle" font-weight="bold">1</text>
+  </g>
+  <!-- sun -->
+  <circle cx="700" cy="80" r="40" fill="#F5C518" stroke="#14213D" stroke-width="4"/>
+</svg>

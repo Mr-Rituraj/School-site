@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}{{ person.name }} — {{ school_name }}{% endblock %}
+{% block content %}
+
+<section class="page-header reveal">
+  <p class="eyebrow"><a href="{{ url_for('faculty') }}" style="color: inherit;">← Faculty</a></p>
+  <div class="profile-head">
+    {% if person.photo %}
+    <img class="avatar-photo large" src="{{ url_for('static', filename='img/' + person.photo) }}" alt="{{ person.name }}">
+    {% else %}
+    <div class="avatar large">{{ person.initials }}</div>
+    {% endif %}
+    <div>
+      <h1>{{ person.name }}</h1>
+      <p class="page-sub" style="margin-bottom: 0.4rem;">{{ person.role }}</p>
+      <span class="faculty-dept">{{ person.dept }}</span>
+    </div>
+  </div>
+</section>
+
+<section class="profile-body reveal">
+  {% if person.bio %}
+  <p>{{ person.bio }}</p>
+  {% else %}
+  <p class="profile-placeholder">A full profile for {{ person.name }} hasn't been added yet —
+    check back soon, or contact the front office for more information.</p>
+  {% endif %}
+</section>
+
+{% endblock %}

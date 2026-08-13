@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Admissions — {{ school_name }}{% endblock %}
+{% block content %}
+
+<section class="page-header reveal">
+  <p class="eyebrow">Admissions</p>
+  <h1>Four steps, start to finish.</h1>
+  <p class="page-sub">We keep the process short on purpose — most families hear back
+    with a decision inside three weeks of their first enquiry.</p>
+</section>
+
+<section class="timeline reveal">
+  {% for s in steps %}
+  <div class="timeline-step">
+    <div class="step-number">{{ '%02d' % s.step }}</div>
+    <div class="step-body">
+      <h3>{{ s.title }}</h3>
+      <p>{{ s.detail }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="cta-band reveal">
+  <h2>Ready to apply?</h2>
+  <p>Send us an enquiry and our admissions team will get back to you within three working days.</p>
+  <a href="{{ url_for('contact') }}" class="btn btn-primary">Enquire now</a>
+</section>
+
+{% endblock %}

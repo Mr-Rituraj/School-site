@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Contact — {{ school_name }}{% endblock %}
+{% block content %}
+
+<section class="page-header reveal">
+  <p class="eyebrow">Contact</p>
+  <h1>Talk to the front office.</h1>
+  <p class="page-sub">Enquiries, tours, or anything else — a real person reads every message.</p>
+</section>
+
+<section class="contact-layout reveal">
+  <form class="contact-form" method="POST" action="{{ url_for('contact') }}">
+    <label>
+      Your name
+      <input type="text" name="name" placeholder="Jordan Reyes" required>
+    </label>
+    <label>
+      Email address
+      <input type="email" name="email" placeholder="you@example.com" required>
+    </label>
+    <label>
+      Reason for contact
+      <select name="reason">
+        <option>General enquiry</option>
+        <option>Admissions</option>
+        <option>Report an absence</option>
+        <option>Speak to a teacher</option>
+      </select>
+    </label>
+    <label>
+      Message
+      <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+    </label>
+    <button type="submit" class="btn btn-primary">Send message</button>
+  </form>
+
+  <aside class="contact-info">
+    <h3>Front office</h3>
+    <p>Sankardev Sishu Niketan<br>Tetelisara, Umrongso<br>Dima Hasao, Assam</p>
+    <p><a href="tel:+913674000000">+91 3674 000 000</a></p>
+    <p><a href="mailto:office@ssntetelisara.example">office@ssntetelisara.example</a></p>
+    <h3>Office hours</h3>
+    <p>Monday – Friday<br>8:00am – 4:00pm</p>
+  </aside>
+</section>
+
+{% endblock %}
