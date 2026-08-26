@@ -7,14 +7,15 @@
 
   // Mirrors BELL_SCHEDULE in app.py so the ticker works from any page.
   const schedule = [
-    [9, 0, "Period 1"],
-    [9, 45, "Period 2"],
-    [10, 30, "Break"],
-    [10, 45, "Period 3"],
-    [11, 30, "Period 4"],
-    [12, 15, "Lunch"],
-    [12, 45, "Period 5"],
-    [13, 30, "Period 6"],
+    [9, 0, "Prayer"],
+	[9, 30, "Period 1"],
+    [10, 15, "Period 2"],
+    [10, 50, "Period 3"],
+    [11, 25, "Period 4"],
+    [12, 00, "Period 5"],
+    [12, 30, "Lunch break"],
+    [13, 00, "Period 6"],
+    [13, 30, "Period 7"],
     [14, 0, "Day ends"],
   ];
 
