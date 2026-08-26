@@ -771,12 +771,21 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 .site-footer { border-top: 2px solid var(--ink); margin-top: 2rem; padding: 3rem 0 1.5rem; }
 .footer-inner {
   max-width: 1180px; margin: 0 auto; padding: 0 1.5rem;
-  display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem;
+  display: grid; grid-template-columns: 1.1fr 0.8fr 0.9fr 1.2fr; gap: 2rem;
 }
 .footer-col h4 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.8rem; }
 .footer-col p { font-size: 0.9rem; }
 .footer-col a { display: block; font-size: 0.9rem; color: var(--ink-soft); padding: 0.15rem 0; }
 .footer-col a:hover { color: var(--ink); }
+.footer-map {
+  width: 100%;
+  height: 130px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  margin-top: 0.6rem;
+}
+.footer-map iframe { display: block; }
 .footer-note {
   max-width: 1180px; margin: 2rem auto 0; padding: 1rem 1.5rem 0;
   border-top: 1px solid var(--line);
